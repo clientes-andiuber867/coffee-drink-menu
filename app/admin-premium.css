@@ -104,3 +104,27 @@
 .admin-view-overview .availability{min-height:32px;padding:8px 10px;border-radius:7px}
 .admin-view-overview .table-footer{background:#fcf9f3;border-color:#e8dccb;padding:18px 26px}
 @media(max-width:680px){.admin-view-overview .products-panel .panel-heading{padding:20px 17px}.admin-view-overview .row-product h3{font-size:12px}.admin-view-overview .row-product img,.admin-view-overview .mini-placeholder{width:49px;height:49px}.admin-view-overview .row-price{font-size:12px}.admin-view-overview .table-footer{padding:16px;gap:8px;flex-wrap:wrap}}
+/* Larger, clearer overview list. */
+.admin-view-overview .panel-heading h2{font-size:24px}
+.admin-view-overview .panel-heading h2>span{font-size:14px;padding:6px 10px}
+.admin-view-overview .list-tools input,.admin-view-overview .list-tools select{font-size:14px;min-height:46px}
+.admin-view-overview .list-tools .search input{width:220px}
+.admin-view-overview .table-head{color:#775d43;font-size:11px;padding-top:18px;padding-bottom:18px}
+.admin-view-overview .table-head,.admin-view-overview .product-row{grid-template-columns:minmax(235px,2fr) minmax(100px,1fr) 100px 165px 92px;gap:20px;padding-left:28px;padding-right:28px}
+.admin-view-overview .product-row{padding-top:23px;padding-bottom:23px;border-color:#e9ddce}
+.admin-view-overview .row-product{gap:18px}
+.admin-view-overview .row-product img,.admin-view-overview .mini-placeholder{width:80px;height:80px;border-radius:13px;border:1px solid #e6d7c3}
+.admin-view-overview .row-product h3{font-size:18px;color:#493320;line-height:1.5}
+.admin-view-overview .row-product small{font-size:12px;color:#826d56;margin-top:6px;line-height:1.5}
+.admin-view-overview .row-section{font-size:14px;color:#786046}
+.admin-view-overview .row-price{color:#8b532b;font-size:18px;white-space:nowrap}
+.admin-view-overview .availability{min-height:40px;padding:10px 13px;border-radius:8px;font-size:12px;font-weight:600;color:#46613c;background:#eaf0e4}
+.admin-view-overview .availability.off{color:#925321;background:#f5e6d4}
+.admin-view-overview .availability i{width:6px;height:6px}
+.admin-view-overview .row-actions{gap:8px}
+.admin-view-overview .row-actions .icon-button{width:42px;height:42px;background:#f6efe4;border:1px solid #e9dbc9;border-radius:9px;color:#795537}
+.admin-view-overview .row-actions svg{width:19px;height:19px}
+.admin-view-overview .row-actions .delete:hover{background:#fbe8e0;color:#a2432b}
+.admin-view-overview .table-footer{font-size:12px;color:#7e674f}
+@media(max-width:1200px){.admin-view-overview .table-head,.admin-view-overview .product-row{grid-template-columns:minmax(210px,2fr) 105px 95px 155px 90px;gap:14px;min-width:800px}.admin-view-overview .product-table{overflow-x:auto}.admin-view-overview .panel-heading{flex-wrap:wrap}}
+@media(max-width:680px){.admin-view-overview .panel-heading h2{font-size:22px}.admin-view-overview .list-tools{flex-direction:column;align-items:stretch;gap:10px}.admin-view-overview .list-tools select,.admin-view-overview .list-tools .search input{width:100%;font-size:14px}.admin-view-overview .product-row{min-width:0;grid-template-columns:minmax(0,1fr) auto;padding:20px 16px;gap:14px}.admin-view-overview .row-product{gap:12px}.admin-view-overview .row-product h3{font-size:16px}.admin-view-overview .row-product small{font-size:11px}.admin-view-overview .row-product img,.admin-view-overview .mini-placeholder{width:62px;height:62px}.admin-view-overview .row-price{font-size:15px}.admin-view-overview .row-section{display:block;grid-column:1/-1;grid-row:2;font-size:12px;padding-left:74px}.admin-view-overview .availability{grid-column:1;grid-row:3;margin-left:0;font-size:11px}.admin-view-overview .row-actions{grid-column:2;grid-row:3}.admin-view-overview .table-footer{font-size:11px}.admin-view-overview .table-footer>span:last-child{font-size:10px}}
