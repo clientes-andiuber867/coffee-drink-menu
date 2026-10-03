@@ -21,7 +21,7 @@ test('Private access, two accounts, complete catalog lifecycle, optimized photos
     let response=await request('/api/manage','POST',{kind:'section',data:{name:'Prueba de café',description:'Sección temporal de verificación',position:9999}});assert.equal(response.status,200);
     let catalog=await response.json();sectionId=catalog.sections.find(s=>!before.sections.some(old=>old.id===s.id)).id;
     const form=new FormData();form.set('file',new File([await readFile('public/coffee-hero.jpg')],'photo.jpg',{type:'image/jpeg'}));
-    const upload=await fetch(origin+'/api/upload',{method:'POST',headers:{Origin:origin,Cookie:cookie},body:form});assert.equal(upload.status,200);const photo=await upload.json();assert.ok(photo.bytes<200000);assert.match(photo.url,/\.webp$/);const media=await request(photo.url);assert.equal(media.headers.get('content-type'),'image/webp');
+    const upload=await fetch(origin+'/api/upload',{method:'POST',headers:{Origin:origin,Cookie:cookie},body:form});assert.equal(upload.status,200);const photo=await upload.json();assert.ok(photo.bytes<200000);assert.match(photo.url,/\.webp$/);const media=await fetch(new URL(photo.url,origin));assert.equal(media.headers.get('content-type'),'image/webp');
     const draft={sectionId,name:'Café temporal',description:'Descripción de prueba',price:18.5,image:photo.url,portion:'250 ml',available:true,featured:true,position:0};
     assert.equal((await request('/api/manage','POST',{kind:'product',data:{...draft,price:-1}})).status,400);
     assert.equal((await request('/api/manage','POST',{kind:'product',data:{...draft,image:'javascript:alert(1)'}})).status,400);

@@ -51,6 +51,8 @@ Las imágenes JPG, PNG y WebP (original de hasta 20 MB) se redimensionan en el n
 | `OWNER_PASSWORD_HASH` | Hash del propietario de `.env.local` |
 | `NEXT_PUBLIC_SITE_URL` | Dominio final, por ejemplo `https://coffee-drink.vercel.app` |
 
+Si conectas Turso desde el Marketplace de Vercel, la aplicación reconoce directamente `TURSO_DATABASE_URL` y `TURSO_AUTH_TOKEN`, sin copiar las claves ni renombrarlas. Estas variables tienen prioridad sobre `DATABASE_URL` y `DATABASE_AUTH_TOKEN`.
+
 Es posible usar los hashes locales en Vercel para conservar las mismas contraseñas. Preferiblemente genera contraseñas nuevas para producción. Para generar un hash propio sin imprimir la contraseña en el historial: `node scripts/password.mjs`; copia el hash resultante en la variable correspondiente y vuelve a desplegar. Cambiar el hash invalida las sesiones anteriores de esa cuenta.
 
 Los datos locales y los publicados son independientes. Antes de producción, configura Turso, Vercel Blob y las variables privadas, y carga los productos definitivos en el panel publicado. Subir el código a GitHub no crea automáticamente la base de datos ni el sitio en Vercel.
