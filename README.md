@@ -2,7 +2,9 @@
 
 Carta digital y panel privado de cafetería. Next.js, React y TypeScript, preparados para GitHub y Vercel.
 
-Repositorio: [clientes-andiuber867/coffee-dreams-menu](https://github.com/clientes-andiuber867/coffee-dreams-menu).
+Repositorio: [clientes-andiuber867/coffee-drink-menu](https://github.com/clientes-andiuber867/coffee-drink-menu).
+
+Web: [Coffee Drink](https://coffee-drink-menu.vercel.app).
 
 ## Uso local
 
