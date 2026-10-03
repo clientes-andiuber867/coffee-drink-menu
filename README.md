@@ -2,6 +2,8 @@
 
 Carta digital y panel privado de cafetería. Next.js, React y TypeScript, preparados para GitHub y Vercel.
 
+Repositorio: [clientes-andiuber867/coffee-dreams-menu](https://github.com/clientes-andiuber867/coffee-dreams-menu).
+
 ## Uso local
 
 Requiere Node.js 22.13 o posterior.
@@ -51,7 +53,7 @@ Las imágenes JPG, PNG y WebP (original de hasta 20 MB) se redimensionan en el n
 
 Es posible usar los hashes locales en Vercel para conservar las mismas contraseñas. Preferiblemente genera contraseñas nuevas para producción. Para generar un hash propio sin imprimir la contraseña en el historial: `node scripts/password.mjs`; copia el hash resultante en la variable correspondiente y vuelve a desplegar. Cambiar el hash invalida las sesiones anteriores de esa cuenta.
 
-Los datos locales y los publicados son independientes. Antes de producción, carga los productos definitivos en el panel publicado. No se publicaron repositorio, base de datos ni sitio desde este proyecto: requieren las cuentas del propietario.
+Los datos locales y los publicados son independientes. Antes de producción, configura Turso, Vercel Blob y las variables privadas, y carga los productos definitivos en el panel publicado. Subir el código a GitHub no crea automáticamente la base de datos ni el sitio en Vercel.
 
 ## Seguridad
 
