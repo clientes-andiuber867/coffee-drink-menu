@@ -1,0 +1,20 @@
+.modal:has(.qr-studio){width:min(1050px,calc(100% - 32px));padding:25px 30px;background:#fcf9f2}
+.qr-studio{display:grid;grid-template-columns:minmax(240px,.85fr) minmax(320px,1.2fr);gap:33px;margin-top:22px;align-items:center}
+.qr-preview-tabs{display:flex;gap:5px;padding:5px;border:1px solid #e1d5c3;border-radius:7px;margin-bottom:12px;background:#f2ebdf}
+.qr-preview-tabs button{flex:1;background:transparent;font-size:11px;padding:9px;border-radius:4px;color:#987551}
+.qr-preview-tabs button[aria-pressed=true]{background:#fffaf3;color:#54381f;box-shadow:0 2px 7px #40270b0c;font-weight:600}
+.qr-poster-preview{border-radius:9px;overflow:hidden;box-shadow:0 12px 35px #4e2e161a;background:#2e2017;aspect-ratio:2/3;display:flex;align-items:center;justify-content:center}
+.qr-poster-preview img{display:block;width:100%;height:auto;object-fit:contain}
+.qr-poster-preview.plain{background:white;border:1px solid #e5d9c5;box-shadow:none}.qr-poster-preview.plain img{width:94%}
+.qr-preparing{text-align:center;padding:24px;color:#d3ad84;line-height:1.7;font-size:12px}.qr-preparing svg{margin-bottom:15px}
+.qr-details>.eyebrow{font-size:8px;letter-spacing:1.6px}.qr-details h3{font-size:31px;line-height:1.2;letter-spacing:-1px;margin:13px 0 19px;color:#4b3120}
+.qr-details>p{font-size:12px;line-height:1.9;color:#97816b}
+.qr-url-label{display:flex;flex-direction:column;gap:10px;font-size:11px;font-weight:600;color:#65472e;margin:23px 0 15px}
+.qr-url-label input{width:100%;font-size:11px;font-weight:400;background:#fffdf8;border-color:#e0d3c0;padding:13px}
+.qr-tool-row,.qr-downloads{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}.qr-downloads{margin-top:23px}
+.qr-tool-row .button,.qr-downloads .button{font-size:11px;padding:12px 14px}.qr-downloads .primary{background:#593b25}
+.qr-print-note{padding:19px;background:#f1eadf;border-radius:7px;color:#977650;margin-top:22px;font-size:11px;line-height:1.8}
+.qr-print-note strong{font-size:11px;color:#88653f}.qr-print-note p{margin:8px 0}.qr-print-note small{font-size:10px;color:#a38c72}
+.qr-details>.qr-local-note{font-size:10px;background:#fbf0d9;color:#97743e;border-left:2px solid #d1a467;padding:11px 13px;margin-top:15px}
+.qr-details>.error-banner{margin-top:13px}
+@media(max-width:760px){.modal:has(.qr-studio){padding:20px}.qr-studio{grid-template-columns:1fr;gap:26px}.qr-preview-column{max-width:300px;width:100%;margin:auto}.qr-details h3{font-size:27px}.qr-details>.eyebrow{font-size:7px}.qr-details>p{font-size:11px}.qr-downloads{margin-top:17px}.qr-tool-row .button,.qr-downloads .button{font-size:10px}.qr-print-note{margin-top:16px}}

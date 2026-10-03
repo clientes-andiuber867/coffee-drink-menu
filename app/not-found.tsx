@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="error-page"><span className="eyebrow">COFFEE DRINK · 404</span><h1>Por aquí no hay café.</h1><p>La página que buscas no existe.</p><a className="button primary" href="/menu">Ver nuestra carta</a></main>}

@@ -1,0 +1,1 @@
+export function Brand({light=false,small=false}:{light?:boolean;small?:boolean}){return <a href="/menu" className={`brand ${light?'light':''} ${small?'small':''}`} aria-label="Coffee Drink, ver carta"><img src="/logo.webp" alt="Logo de Coffee Drink" width="100" height="100"/><span>Coffee Drink<small>CAFÉ · HELADOS · POSTRES</small></span></a>}

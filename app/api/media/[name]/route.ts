@@ -1,0 +1,2 @@
+import {readFile} from 'node:fs/promises';
+export async function GET(_:Request,{params}:{params:Promise<{name:string}>}){const {name}=await params;if(process.env.VERCEL||!/^[a-f0-9-]{36}\.webp$/.test(name))return new Response(null,{status:404});try{const file=await readFile('.data/uploads/'+name);return new Response(new Uint8Array(file),{headers:{'Content-Type':'image/webp','Cache-Control':'public,max-age=31536000,immutable'}})}catch{return new Response(null,{status:404})}}
